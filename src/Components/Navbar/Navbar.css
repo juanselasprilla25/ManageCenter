@@ -1,0 +1,21 @@
+nav {
+  width: 100%;
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+  background: rgba(29, 161, 242, 1);
+}
+
+.navLinks {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navLinks > a {
+  color: #fff;
+  text-decoration: none;
+}
