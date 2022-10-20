@@ -7,8 +7,10 @@
       "@components/*": ["./Components/*"],
       "@images/*": ["./Assets/Images/*"],
       "@pages/*": ["./Pages/*"],
-      "@utils/*": ["./Utils/*"]
+      "@utils/*": ["./Utils/*"],
+      "@context/*": ["./Context/*"]
      }
   },
+  "include": ["src"],
   "exclude": ["node_modules", "**/node_modules/*", "build"]
 }

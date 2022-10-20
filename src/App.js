@@ -1,21 +1,21 @@
 import React from "react";
-import "./App.css";
 
 // Components
 import { Footer } from "Components/Footer/Footer";
-import { Header } from "Components/Header/Header";
 
 //Pages
 import { AppRouter } from "Routes/AppRouter";
+import { DataProvider } from "Context/DataContext";
 
 function App() {
-  return (
-    <React.Fragment>
-      <Header />
-      <AppRouter />
-      <Footer />
-    </React.Fragment>
-  );
+	return (
+		<DataProvider>
+			<div className="container">
+				<AppRouter />
+				<Footer />
+			</div>
+		</DataProvider>
+	);
 }
 
 export default App;

@@ -1,24 +1,25 @@
-import React, { useState, useEffect } from "react";
 import "./Counter.css";
 
+import React, { useEffect, useState } from "react";
+
 export function Counter() {
-  const [count, setCount] = useState(0);
+	const [count, setCount] = useState(0);
 
-  useEffect(() => {
-    console.log(count);
-  }, [count]);
+	useEffect(() => {
+		console.log(count);
+	}, [count]);
 
-  function adjustCount(amount) {
-    setCount((currentAmount) => {
-      return currentAmount + amount;
-    });
-  }
+	function adjustCount(amount) {
+		setCount((currentAmount) => {
+			return currentAmount + amount;
+		});
+	}
 
-  return (
-    <React.Fragment>
-      <button onClick={() => adjustCount(-1)}>-</button>
-      <span> {count}</span>
-      <button onClick={() => adjustCount(1)}>+</button>
-    </React.Fragment>
-  );
+	return (
+		<React.Fragment>
+			<button onClick={() => adjustCount(-1)}>-</button>
+			<span> {count}</span>
+			<button onClick={() => adjustCount(1)}>+</button>
+		</React.Fragment>
+	);
 }
